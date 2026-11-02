@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold transition disabled:opacity-50; }
+  .btn-green { @apply btn bg-forest text-white hover:bg-forest/90; }
+  .btn-line { @apply btn border border-forest text-forest hover:bg-forest/5; }
+  .field { @apply w-full rounded-md border border-navy/20 bg-white px-3 py-2.5 text-sm outline-none focus:border-forest; }
+  .label { @apply mb-1 block text-xs font-medium text-navy/70; }
+}
